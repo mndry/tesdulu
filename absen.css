@@ -1,0 +1,36 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+h1 {
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(89, 112, 112);
+}
+
+h2 {
+    text-align: left;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(89, 112, 112);
+}
+
+header {
+    position: absolute;
+    background: #ffffff;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header .logo {
+    color: rgb(83, 83, 83);
+    height: 60px;
+    line-height: 60px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold; }

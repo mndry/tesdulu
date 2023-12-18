@@ -1,0 +1,88 @@
+body {
+    background-color: #ffffff;
+}
+
+header {
+    position: absolute;
+    background: #28272b;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header .logo {
+    color: rgb(235, 235, 235);
+    height: 85px;
+    line-height: 85px;
+    font-size: 0px;
+    text-align: center;
+    font-weight: bold; }
+
+
+.image {
+display: flex;
+width: 100%;
+transition: 4s;
+}
+
+.image img{
+width:  100%;
+}
+
+
+.wrapper {
+    width: 800px;
+    margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative
+}
+
+#slide-1:target ~ .image {
+    margin-left: 0px;
+}
+
+#slide-2:target ~ .image {
+    margin-left: -100%;
+}
+
+#slide-3:target ~ .image {
+    margin-left: -200%;
+}
+
+#slide-4:target ~ .image {
+    margin-left: -300%;
+}
+
+.navigation a {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+    font-size: 0px;
+    border-radius: 50%;
+    margin: 3px;
+    transition: 2s;
+}
+
+.navigation a:hover {
+    background-color: rgb(26, 26, 73);
+}
+
+.navigation {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top:  -50px;
+}
+
+@media screen and (max-width: 800px){
+    .wrapper {
+        width: 90%;
+} 
+}
